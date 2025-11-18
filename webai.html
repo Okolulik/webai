@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiohead - Oficiální Fan Stránka</title>
+    <meta name="description" content="Informativní stránka o britské alternativní rockové kapele Radiohead. Historie, diskografie a zajímavosti.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1e293b",
+                        secondary: "#475569",
+                        accent: "#0ea5e9"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen bg-gray-50">
+    <!-- Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-primary">Radiohead</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#domu" class="text-gray-700 hover:text-accent transition-colors font-medium" onclick="showPage('domu')">Domů</a>
+                    <a href="#historie" class="text-gray-700 hover:text-accent transition-colors font-medium" onclick="showPage('historie')">Historie</a>
+                    <a href="#diskografie" class="text-gray-700 hover:text-accent transition-colors font-medium" onclick="showPage('diskografie')">Diskografie</a>
+                </div>
+                <button class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Home Page -->
+        <div id="domu" class="page active">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-bold text-primary mb-4">Radiohead</h1>
+                <p class="text-xl text-secondary max-w-2xl mx-auto">Britská alternativní rocková kapela založená v roce 1985 v Abingdonu v Oxfordshiru.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div>
+                    <img 
+                        src="https://www.ireport.cz/files/70_1000573_8962.jpg" 
+                        alt="Radiohead kapela současná podoba" 
+                        class="w-full rounded-lg shadow-lg"
+                        loading="lazy"
+                    />
+                </div>
+                <div class="flex flex-col justify-center">
+                    <h2 class="text-3xl font-bold text-primary mb-4">O kapele</h2>
+                    <p class="text-gray-700 mb-4">Radiohead je jedna z nejvlivnějších a nejuznávanějších kapel současnosti. Jejich hudba se vyvíjela od alternativního rocku přes elektronické experimenty až po ambientní soundscapy.</p>
+                    <p class="text-gray-700">Kapelu tvoří Thom Yorke (zpěv, kytara, klávesy), Jonny Greenwood (kytara, klávesy, ondes Martenot), Ed O'Brien (kytara, doprovodný zpěv), Colin Greenwood (basová kytara) a Phil Selway (bicí, perkuse).</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-primary mb-6">Rychlá fakta</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-accent mb-2">9</div>
+                        <div class="text-gray-700">Studiových alb</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-accent mb-2">1985</div>
+                        <div class="text-gray-700">Rok založení</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-accent mb-2">30M+</div>
+                        <div class="text-gray-700">Prodaných alb</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- History Page -->
+        <div id="historie" class="page hidden">
+            <h1 class="text-4xl font-bold text-primary mb-8">Historie kapely</h1>
+            
+            <div class="space-y-8">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-2xl font-bold text-primary mb-4">Začátky (1985-1991)</h3>
+                    <p class="text-gray-700 mb-4">Kapela byla založena na škole v Abingdonu pod názvem On a Friday. Po dokončení studií se členové znovu sešli a v roce 1991 podepsali smlouvu s EMI.</p>
+                    <img 
+                        src="https://i.ytimg.com/vi/oIFLtNYI3Ls/maxresdefault.jpg" 
+                        alt="Radiohead začátky kapely" 
+                        class="w-full rounded-lg mb-4"
+                        loading="lazy"
+                    />
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-2xl font-bold text-primary mb-4">Průlom a úspěch (1992-1997)</h3>
+                    <p class="text-gray-700 mb-4">Průlom přišel s singlem "Creep" v roce 1992. Album "The Bends" (1995) a zejména "OK Computer" (1997) je vyneslo na vrchol světové hudební scény.</p>
+                    <img 
+                        src="https://1000logos.net/wp-content/uploads/2020/04/Radiohead-Logo-2000.jpg" 
+                        alt="Radiohead koncert 90. léta" 
+                        class="w-full rounded-lg mb-4"
+                        loading="lazy"
+                    />
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-2xl font-bold text-primary mb-4">Experimentální období (2000-současnost)</h3>
+                    <p class="text-gray-700 mb-4">Od roku 2000 s albem "Kid A" kapela výrazně experimentuje s elektronikou a nekonvenčními hudebními strukturami, přičemž si zachovává komerční úspěch.</p>
+                    <img 
+                        src="https://muzikercdn.com/uploads/products/21017/2101736/main_2dbbdec1.jpg" 
+                        alt="Radiohead moderní koncert" 
+                        class="w-full rounded-lg mb-4"
+                        loading="lazy"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <!-- Discography Page -->
+        <div id="diskografie" class="page hidden">
+            <h1 class="text-4xl font-bold text-primary mb-8">Diskografie</h1>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img 
+                        src="https://www.gramodesky.cz/storage/images/radiohead-pablo-honey-1993-20118-0.jpg.webp" 
+                        alt="Pablo Honey album cover" 
+                        class="w-full h-48 object-cover"
+                        loading="lazy"
+                    />
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-primary mb-2">Pablo Honey (1993)</h3>
+                        <p class="text-gray-600 text-sm mb-3">Debutové album obsahující hit "Creep"</p>
+                        <div class="text-accent font-medium">8 skladeb</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img 
+                        src="https://i.ytimg.com/vi/6VzsS4oil6U/maxresdefault.jpg" 
+                        alt="The Bends album cover" 
+                        class="w-full h-48 object-cover"
+                        loading="lazy"
+                    />
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-primary mb-2">The Bends (1995)</h3>
+                        <p class="text-gray-600 text-sm mb-3">Průlomové album s klasickými hity</p>
+                        <div class="text-accent font-medium">12 skladeb</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img 
+                        src="https://www.craccum.co.nz/content/images/2025/05/d5a6i9q4roj91.webp" 
+                        alt="OK Computer album cover" 
+                        class="w-full h-48 object-cover"
+                        loading="lazy"
+                    />
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-primary mb-2">OK Computer (1997)</h3>
+                        <p class="text-gray-600 text-sm mb-3">Kultovní album oceněné kritikou</p>
+                        <div class="text-accent font-medium">12 skladeb</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img 
+                        src="https://consequence.net/wp-content/uploads/2021/09/Radiohead-Kid-A-Mnesia.jpeg?quality=80" 
+                        alt="Kid A album cover" 
+                        class="w-full h-48 object-cover"
+                        loading="lazy"
+                    />
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-primary mb-2">Kid A (2000)</h3>
+                        <p class="text-gray-600 text-sm mb-3">Experimentální elektronický zvuk</p>
+                        <div class="text-accent font-medium">10 skladeb</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img 
+                        src="https://m.media-amazon.com/images/I/A1MwaIeBpwL._UF1000,1000_QL80_.jpg" 
+                        alt="In Rainbows album cover" 
+                        class="w-full h-48 object-cover"
+                        loading="lazy"
+                    />
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-primary mb-2">In Rainbows (2007)</h3>
+                        <p class="text-gray-600 text-sm mb-3">Revoluční pay-what-you-want vydání</p>
+                        <div class="text-accent font-medium">10 skladeb</div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img 
+                        src="https://upload.wikimedia.org/wikipedia/en/6/6a/Amoonshapedpool.png" 
+                        alt="A Moon Shaped Pool album cover" 
+                        class="w-full h-48 object-cover"
+                        loading="lazy"
+                    />
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-primary mb-2">A Moon Shaped Pool (2016)</h3>
+                        <p class="text-gray-600 text-sm mb-3">Nejnovější studiové album</p>
+                        <div class="text-accent font-medium">11 skladeb</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white mt-12">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Radiohead</h3>
+                    <p class="text-gray-300">Oficiální fan stránka věnovaná britské kapele Radiohead.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Navigace</h4>
+                    <div class="space-y-2">
+                        <a href="#domu" class="block text-gray-300 hover:text-white transition-colors" onclick="showPage('domu')">Domů</a>
+                        <a href="#historie" class="block text-gray-300 hover:text-white transition-colors" onclick="showPage('historie')">Historie</a>
+                        <a href="#diskografie" class="block text-gray-300 hover:text-white transition-colors" onclick="showPage('diskografie')">Diskografie</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Kontakt</h4>
+                    <p class="text-gray-300">info@radiohead-fan.cz</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-600 mt-8 pt-6 text-center text-gray-300">
+                <p>&copy; 2024 Radiohead Fan Stránka. Všechna práva vyhrazena.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Page navigation functionality
+        function showPage(pageId) {
+            // Hide all pages
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.add('hidden');
+                page.classList.remove('active');
+            });
+            
+            // Show selected page
+            const targetPage = document.getElementById(pageId);
+            if (targetPage) {
+                targetPage.classList.remove('hidden');
+                targetPage.classList.add('active');
+            }
+            
+            // Prevent default anchor behavior
+            event.preventDefault();
+        }
+
+        // Mobile menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('button.md\\:hidden');
+            const navLinks = document.querySelector('.hidden.md\\:flex');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                navLinks.classList.toggle('hidden');
+                navLinks.classList.toggle('absolute');
+                navLinks.classList.toggle('top-16');
+                navLinks.classList.toggle('left-0');
+                navLinks.classList.toggle('right-0');
+                navLinks.classList.toggle('bg-white');
+                navLinks.classList.toggle('p-4');
+                navLinks.classList.toggle('shadow-lg');
+                navLinks.classList.toggle('flex-col');
+                navLinks.classList.toggle('space-y-4');
+            });
+        });
+
+        // Define page data
+        const pageData = {
+            "domu": {
+                "title": "Radiohead - Oficiální Fan Stránka",
+                "description": "Informativní stránka o britské alternativní rockové kapele Radiohead"
+            },
+            "historie": {
+                "title": "Historie - Radiohead",
+                "description": "Kompletní historie kapely Radiohead od založení po současnost"
+            },
+            "diskografie": {
+                "title": "Diskografie - Radiohead", 
+                "description": "Přehled všech alb a singlů kapely Radiohead"
+            }
+        };
+    </script>
+</body>
+</html>
